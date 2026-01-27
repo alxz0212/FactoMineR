@@ -37,3 +37,9 @@ Cada vez que hagas cambios y quieras guardarlos en la nube:
 1. git add .
 2. git commit -m "Descripción de los cambios que hiciste"
 3. git push
+
+-----------------------------------------------------
+COMANDO PARA EJECUTAR EL DASHBOARD
+-----------------------------------------------------
+streamlit run 03_Dashboard_PCA.py
+
