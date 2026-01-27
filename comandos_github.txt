@@ -1,0 +1,39 @@
+GUIA RAPIDA: Comandos para subir tu proyecto a GitHub
+=====================================================
+
+1. Inicializar el repositorio (solo la primera vez)
+---------------------------------------------------
+git init
+
+2. Añadir tus archivos al control de versiones
+----------------------------------------------
+git add .
+
+3. Guardar los cambios (Hacer un "paquete" con los cambios)
+-----------------------------------------------------------
+git commit -m "Mi primer commit: Subiendo el proyecto completo"
+
+4. Renombrar la rama principal a 'main' (estándar actual)
+---------------------------------------------------------
+git branch -M main
+
+5. Conectar con tu repositorio en la nube (GitHub)
+--------------------------------------------------
+# Solo ejecutar si NO lo has conectado antes
+git remote add origin https://github.com/alxz0212/FactoMineR.git
+
+# Si ya existía y quieres cambiarlo, usa:
+# git remote set-url origin https://github.com/alxz0212/FactoMineR.git
+
+6. Subir los archivos a GitHub
+------------------------------
+git push -u origin main
+
+-----------------------------------------------------
+RESUMEN PARA ACTUALIZACIONES FUTURAS (Día a día)
+-----------------------------------------------------
+Cada vez que hagas cambios y quieras guardarlos en la nube:
+
+1. git add .
+2. git commit -m "Descripción de los cambios que hiciste"
+3. git push

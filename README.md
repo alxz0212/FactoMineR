@@ -65,5 +65,5 @@ Este proyecto sigue la metodología enseñada en:
 
 ---
 
-**Autor**: [Tu Nombre / @alxz0212]
+**Autor**: [Daniel Alexis Mendoza Corne / @alxz0212]
 **Profesor/Referencia**: Juan Marcelo Gutiérrez Miranda (@TodoEconometria)
