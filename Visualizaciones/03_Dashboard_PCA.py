@@ -213,10 +213,10 @@ with tab1:
             legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
             margin=dict(l=20, r=20, t=20, b=20)
         )
-        st.plotly_chart(fig_scree, use_container_width=True)
+        st.plotly_chart(fig_scree, width='stretch')
     
     st.markdown("### Tabla de Autovalores")
-    st.dataframe(scree_df.set_index('Dimension').style.format("{:.2f}"), use_container_width=True)
+    st.dataframe(scree_df.set_index('Dimension').style.format("{:.2f}"), width='stretch')
 
 # --- TAB 2: VARIABLES (CIRCULO DE CORRELACION) ---
 with tab2:
@@ -252,7 +252,7 @@ with tab2:
         fig_circle.update_yaxes(range=[-1.2, 1.2], zeroline=True, zerolinewidth=2, zerolinecolor='black', title=f"{y_axis} ({var_exp[dim_y]*100:.1f}%)")
         fig_circle.update_layout(width=700, height=700, showlegend=False)
         
-        st.plotly_chart(fig_circle, use_container_width=True)
+        st.plotly_chart(fig_circle, width='stretch')
         
     with col_data:
         st.subheader("Contribuciones a los Ejes")
@@ -295,7 +295,7 @@ with tab3:
     fig_ind.add_hline(y=0, line_dash="dash", line_color="gray")
     fig_ind.add_vline(x=0, line_dash="dash", line_color="gray")
     
-    st.plotly_chart(fig_ind, use_container_width=True)
+    st.plotly_chart(fig_ind, width='stretch')
 
 # --- TAB 4: BIPLOT ---
 with tab4:
@@ -320,7 +320,7 @@ with tab4:
             font=dict(color="green", size=10)
         )
         
-    st.plotly_chart(fig_bi, use_container_width=True)
+    st.plotly_chart(fig_bi, width='stretch')
 
 
 # Footer

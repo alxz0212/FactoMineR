@@ -452,10 +452,15 @@ plt.suptitle('ANALISIS DE COMPONENTES PRINCIPALES (PCA) - ESTILO FACTOMINER\n'
              'Dataset: Decathlon | Libreria: Prince',
              fontsize=16, fontweight='bold')
 
-plt.savefig(os.path.join(SCRIPT_DIR, '02_PCA_FactoMineR_graficos.png'), dpi=150)
+# Asegurar que la carpeta 'imagenes' existe
+img_dir = os.path.join(SCRIPT_DIR, 'imagenes')
+if not os.path.exists(img_dir):
+    os.makedirs(img_dir)
+
+plt.savefig(os.path.join(img_dir, '02_PCA_FactoMineR_graficos.png'), dpi=150)
 plt.show()
 
-print("\nGraficos guardados en: 02_PCA_FactoMineR_graficos.png")
+print(f"\nGraficos guardados en: {os.path.join(img_dir, '02_PCA_FactoMineR_graficos.png')}")
 
 # =============================================================================
 # 12. TABLA RESUMEN FINAL (Estilo output de FactoMineR)
@@ -546,8 +551,9 @@ def plot_correlation_circle(pca_model, data, active_columns, save_path=None):
 print("\n" + "=" * 80)
 print("13. GENERANDO CIRCULO DE CORRELACION INDIVIDUAL")
 print("=" * 80)
-plot_correlation_circle(pca, df, active_cols, os.path.join(SCRIPT_DIR, '02_PCA_circulo_correlacion.png'))
-print("Guardado en: 02_PCA_circulo_correlacion.png")
+# Usar la carpeta 'imagenes' ya creada arriba o asegurar su existencia
+plot_correlation_circle(pca, df, active_cols, os.path.join(img_dir, '02_PCA_circulo_correlacion.png'))
+print(f"Guardado en: {os.path.join(img_dir, '02_PCA_circulo_correlacion.png')}")
 
 # =============================================================================
 # 14. EXPORTAR RESULTADOS A EXCEL (Como hace FactoMineR)
