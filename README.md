@@ -1,5 +1,7 @@
 # PCA Excellence: Titanic & FactoMineR Ecosystem 🚢📊
 
+![Titanic Dashboard Preview](imagenes/titanic_dashboard_mockup.png)
+
 [![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![FactoMineR](https://img.shields.io/badge/Methodology-FactoMineR-blue?style=for-the-badge)](http://factominer.free.fr/)
